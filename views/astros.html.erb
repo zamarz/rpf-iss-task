@@ -1,3 +1,14 @@
-<h1>Testing Data </h1>
+<h1>Who is in space right now? </h1>
 
-<p>Here is what the data looks like: <%= data %> </p>
+<p>Here are the people currently in space: </p>
+
+<ul>
+<% data["people"].each do |person| %>
+    <li> Name : <%= person['name'] %> </li>
+    <li>Craft : <%= person['craft'] %> </li>
+
+    <% end %>
+ </ul>
+
+
+
