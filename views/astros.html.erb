@@ -2,10 +2,9 @@
 
 <p class="subtitle">🚀Here are the people currently in space!🚀 </p>
 
-<ul>
+<ul class="astronautul">
 <% data["people"].each do |person| %>
-    <li> Name : <%= person['name'] %> </li>
-    <li>Craft : <%= person['craft'] %> </li>
+    <li class="astronautli"> <%= person['name'] %> is flying on the <%= person['craft'] %> </li>
 
     <% end %>
  </ul>
