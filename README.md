@@ -2,39 +2,22 @@
 
 This is a little application, written in [Ruby](https://ruby-lang.org), using the [Sinatra](https://sinatrarb.com/) framework. It allows users to see the whereabouts of the International Space Station, using the [OpenNotify APIs](http://api.open-notify.org/).
 
-The aim of the exercise is for you to demonstrate how you would talk through your code and design decisions to peers, and will be used as a prompt for further discussions. We won't ask you to write any code during the interview itself, but we might ask specific questions about the code that you show us and how you might approach work on additional features or changes.
+## What the app currently does
 
-It is important to attempt all of the tasks, even if you don't finish them.
+* The app shows current astronauts in space on the `astros` page. It displays their names and what craft they belong to.
+* The `position` page displays where the ISS is positioned, using its longitude and latitude coordinates as well as a timestamp.
+* The app returns the ISS position in a JSON format if users access the  `http://localhost:4567/iss_position.json` endpoint. 
+* The app currently has basic CSS styling, which can be viewed in the `styles.css` file.
 
-During the interview, you should be prepared to walk us through the code on your machine via screen share (Google Meet).
+## Future plans
 
-If you get stuck, please do get in touch and we'll do our best to help.
+The application could be improved in the future by:
 
-## What we're expecting
+* Adding more styling including a colour scheme, header and footers, and much more.
+* Converting the position of the ISS from longitude and latitude so users can know what part of the world it is currently above.
+* Make the application more responsive using media queries so it can be viewed correctly on a number of devices
+* Ensure the application is accessible by including features such as correct tags and labels.
 
-* You should spend no more than 3 hours on this challenge, and attempt all three tasks.
-* Please send back your code (by the date specified in the email from us) either as a link to a GitHub / Gitlab repository, or within a zip file.
-
-We understand that you will have other commitments and time constraints, please let us know as soon as possible if you will be unable to complete this challenge by the deadline so that we are able to make allowances.
-
-The challenge only needs to be runnable in a local environment; it doesn't need to be hosted anywhere.
-
-If you need help with the challenge, for whatever reason, please do drop us an email and we will do our best to assist.
-
-## Tasks
-
-1. Build a page to show the current astronauts that are in space.
-  * You can either add to this codebase using the `OpenNotify#astros` method and use the existing `position` page as a guide when adding this new page.
-  * Alternatively you could obtain the data from the `http://localhost:4567/astros` endpoint and use this codebase as an API utilising whatever framework you choose as the frontend.
-2. Add some style to the application using HTML and CSS, prioritising clear information presentation.
-  * Location data should be shown on the `position` page.
-  * Astronauts and their space ships could be shown in a table, or a list.
-  * Add a stylesheet and some CSS to make the layout really clear.
-3. Add a new endpoint to return the ISS position data as JSON, instead of an HTML page. `http://localhost:4567/iss_position.json` should return JSON in the following format:
-
-```json
-{"iss_position": {"longitude": "-3.4941", "latitude": "-37.5113"}, "timestamp": 1684502291, "message": "success"}
-```
 
 ## Getting started
 
