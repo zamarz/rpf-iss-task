@@ -1,3 +1,39 @@
 * {
-    background-color: white;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding-top: 7%;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: xx-large;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 5px 0;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
 }
